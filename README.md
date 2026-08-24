@@ -4,6 +4,12 @@
 
 ![EchoLock compares three futures for a delayed command](docs/assets/echolock-hero.png)
 
+**[Open the live judge demo](https://echolock-ai.onrender.com/)** ·
+[View the passing GitHub Actions workflow](https://github.com/lsh2546/echolock-ai/actions)
+
+> The demo uses Render's free instance tier. After inactivity, the first request
+> can show a wake-up screen for about a minute before the application loads.
+
 Deep-space commands can arrive minutes after they leave Earth. By then, battery,
 temperature, communications, or mission priorities may have changed. Conventional
 execute-or-reject handling can either endanger the spacecraft or discard the
