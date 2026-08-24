@@ -105,5 +105,5 @@ def audit_snapshot() -> dict:
 
 
 def evaluation_summary() -> dict:
-    path = Path(__file__).resolve().parents[2] / "outputs" / "evaluation" / "phase2-summary.json"
+    path = Path.cwd() / "outputs" / "evaluation" / "phase2-summary.json"
     return json.loads(path.read_text(encoding="utf-8"))
