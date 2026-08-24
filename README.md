@@ -5,6 +5,7 @@
 ![EchoLock compares three futures for a delayed command](docs/assets/echolock-hero.png)
 
 **[Open the live judge demo](https://echolock-ai.onrender.com/)** ·
+[Watch the 2:58 demo video](https://youtu.be/Xpfskr3YJDM) ·
 [View the passing GitHub Actions workflow](https://github.com/lsh2546/echolock-ai/actions)
 
 > The demo uses Render's free instance tier. After inactivity, the first request

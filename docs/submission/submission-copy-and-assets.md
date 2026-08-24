@@ -5,6 +5,9 @@
 **Title**  
 EchoLock AI — Intent Escrow for Delayed Deep-Space Commands
 
+**Demo video**
+https://youtu.be/Xpfskr3YJDM
+
 **One-line description**  
 EchoLock revalidates a delayed command when it arrives, preserves its mission
 intent with a verified safe patch, and proves every decision cryptographically.
