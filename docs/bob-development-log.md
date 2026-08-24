@@ -270,11 +270,19 @@ references in `.github/workflows/ci.yml` with exact immutable full commit SHAs.
 | Action | Tag → SHA | Commit SHA | Verification |
 |---|---|---|---|
 | `actions/checkout` | `@v4` → `@v4.2.2` | `11bd71901bbe5b1630ceea73d27597364c9af683` | github.com/actions/checkout/releases/tag/v4.2.2 |
-| `actions/setup-python` | `@v5` → `@v5.3.0` | `0acd30b01e21827f5e942adb5d7a31a0d57cf1e3` | github.com/actions/setup-python/releases/tag/v5.3.0 |
-| `trufflesecurity/trufflehog` | `@main` → `@v3.88.1` | `4e8ec9a28d7c35f6f8462660063f62cd7d61a62c` | github.com/trufflesecurity/trufflehog/releases/tag/v3.88.1 |
+| `actions/setup-python` | `@v5` → `@v5.3.0` | `0b93645e9fea7318ecaed2b359559ac225c90a2b` | github.com/actions/setup-python/releases/tag/v5.3.0 |
+| `trufflesecurity/trufflehog` | `@main` → `@v3.88.1` | `d73edfb85d79432e3c767c407afdee59c9a34fde` | github.com/trufflesecurity/trufflehog/releases/tag/v3.88.1 |
 
 `actions/checkout` appears twice (once in `test` job, once in `secret-scan` job).
 Both occurrences use the same immutable SHA.
+
+> **Public-release correction (Codex, 2026-08-24):** the original Bob-recorded
+> SHA values for `actions/setup-python@v5.3.0` and
+> `trufflesecurity/trufflehog@v3.88.1` did not resolve in GitHub Actions.
+> Codex independently queried each official tag ref, replaced only those two
+> invalid workflow references with the tag targets shown above, and reran CI.
+> No application code, safety rule, threshold, test, or evaluation datum was
+> changed by this correction.
 
 ### Validation performed
 
