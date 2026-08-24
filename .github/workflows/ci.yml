@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
 
       - name: Set up Python
-        uses: actions/setup-python@0acd30b01e21827f5e942adb5d7a31a0d57cf1e3  # v5.3.0
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b  # v5.3.0
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -56,7 +56,7 @@ jobs:
 
       - name: Run trufflehog
         # Uses ${{ github.event.before }} as base — safe on first commit (no HEAD~1).
-        uses: trufflesecurity/trufflehog@4e8ec9a28d7c35f6f8462660063f62cd7d61a62c  # v3.88.1
+        uses: trufflesecurity/trufflehog@d73edfb85d79432e3c767c407afdee59c9a34fde  # v3.88.1
         with:
           path: ./
           base: ${{ github.event.before || github.sha }}
