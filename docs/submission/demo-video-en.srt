@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:20,000
+This command is safe when Earth sends it. Fourteen minutes later, the battery has fallen from 85% to 28%. Force it and the spacecraft crosses its reserve. Reject it and the mission loses the data. EchoLock finds—and proves—the third option.
+
+2
+00:00:20,000 --> 00:00:38,000
+EchoLock is an intent escrow for delayed space commands. It seals the untouched original command with its goal, assumptions, hard invariants, and authorised adaptations.
+
+3
+00:00:38,000 --> 00:01:04,000
+At arrival, EchoLock verifies both seals and rechecks the command against current state. A safe command executes. When conditions drift, it attaches a separate Intent-Safe Patch. The original is never rewritten.
+
+4
+00:01:04,000 --> 00:01:24,000
+If a safe opportunity exists before expiry, EchoLock defers. If integrity fails, the command expires, or no safe authorised option remains, it rejects. The precedence is deterministic and fail-closed.
+
+5
+00:01:24,000 --> 00:01:55,000
+The Counterfactual Predictor compares three futures. Forcing the original violates the battery floor. Rejecting everything returns no science. The verified adaptation preserves science while every invariant passes. These are deterministic toy-model outcomes, not flight predictions.
+
+6
+00:01:55,000 --> 00:02:18,000
+Every decision produces a Delta Certificate. Its SHA-256 hash binds the command, intent, arrival state, patch, verdict, checks, and counterfactual evidence. The semantic replay hash proves equivalent runs agree, and every audit entry links backward.
+
+7
+00:02:18,000 --> 00:02:37,000
+Across 60 fixed, balanced synthetic cases—15 per verdict—the pipeline verified 60 certificate hashes and 60 replay hashes with zero safety violations in this constructed benchmark. These numbers do not claim operational accuracy.
+
+8
+00:02:37,000 --> 00:02:52,000
+IBM Bob was the principal AI development partner for the initial architecture and core Phase 0 and 1 safety pipeline. Codex independently audited, corrected, and continued later phases. The repository records that provenance exactly.
+
+9
+00:02:52,000 --> 00:02:58,000
+EchoLock: preserve the intent, adapt the action, and prove the difference.

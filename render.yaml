@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: echolock-demo
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: false

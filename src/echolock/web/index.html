@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EchoLock verifies delayed deep-space commands against arrival-time reality.">
+  <title>EchoLock AI — Command Arrival Safety</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#mission"><span class="brand-mark">E</span><span>EchoLock <b>AI</b></span></a>
+    <nav aria-label="Demo sections">
+      <a href="#scenarios">Scenarios</a><a href="#comparison">Counterfactual</a><a href="#certificate">Certificate</a><a href="#audit">Audit</a>
+    </nav>
+    <span class="mode"><i></i> deterministic safety core</span>
+  </header>
+
+  <main>
+    <section class="hero" id="mission">
+      <div class="eyebrow">INTENT-PRESERVING COMMAND ESCROW · DEEP SPACE</div>
+      <h1>A command can be correct when sent—<em>and dangerous when received.</em></h1>
+      <p>EchoLock revalidates mission intent against arrival-time reality, then executes, adapts, defers, or rejects—with a cryptographic explanation.</p>
+      <div class="signal-line"><span>EARTH</span><div><i></i><b>14 min one-way delay</b></div><span>SPACECRAFT</span></div>
+      <div class="hero-stats" id="metrics">
+        <article><strong>60</strong><span>fixed synthetic cases</span></article>
+        <article><strong>100%*</strong><span>unsafe interception</span></article>
+        <article><strong>0%*</strong><span>safety violations</span></article>
+        <article><strong>100%*</strong><span>replay consistency</span></article>
+      </div>
+      <p class="benchmark-note">* Deterministic, balanced synthetic PoC benchmark—not flight or operational performance.</p>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="section-heading"><div><span>01 · ARRIVAL DECISION</span><h2>Same command. Four realities.</h2></div><p>Select an arrival state to run the complete verified pipeline.</p></div>
+      <div class="scenario-grid" id="scenario-grid" aria-label="Scenario selector"></div>
+      <div class="decision-console" aria-live="polite">
+        <div class="console-head"><span id="scenario-label">LOADING SCENARIO</span><span class="verified"><i></i> seals verified</span></div>
+        <div class="decision-main">
+          <div><span class="small-label">ECHOLOCK VERDICT</span><div class="verdict" id="verdict">—</div><p id="scenario-summary"></p></div>
+          <div class="state-panel">
+            <div><span>Battery on arrival</span><strong id="battery">—</strong><meter id="battery-meter" min="0" max="100"></meter></div>
+            <div><span>Equipment temperature</span><strong id="temperature">—</strong><meter id="temp-meter" min="0" max="100"></meter></div>
+            <div><span>Comm window</span><strong id="comm">—</strong></div>
+            <div><span>Goal preservation</span><strong id="gps">—</strong></div>
+          </div>
+        </div>
+        <div class="patch-strip"><span>INTENT-SAFE PATCH</span><code id="patch">Waiting for verified decision…</code></div>
+      </div>
+    </section>
+
+    <section class="section" id="comparison">
+      <div class="section-heading"><div><span>02 · COUNTERFACTUAL PREDICTOR</span><h2>Three futures, compared before action.</h2></div><p>Deterministic toy-model outcomes; never used to override the Safety Gate.</p></div>
+      <div class="branch-grid" id="branches"></div>
+    </section>
+
+    <section class="section proof-grid" id="certificate">
+      <div>
+        <div class="section-heading compact"><div><span>03 · DELTA CERTIFICATE</span><h2>The decision proves itself.</h2></div></div>
+        <div class="certificate-card">
+          <div class="cert-status"><span class="seal">✓</span><div><strong>Cryptographic integrity valid</strong><small>SHA-256 · canonical JSON · verifier 1.0.0</small></div></div>
+          <dl>
+            <div><dt>Certificate ID</dt><dd id="certificate-id">—</dd></div>
+            <div><dt>Decision / precedence</dt><dd id="decision-step">—</dd></div>
+            <div><dt>Certificate hash</dt><dd id="certificate-hash">—</dd></div>
+            <div><dt>Semantic replay hash</dt><dd id="semantic-hash">—</dd></div>
+          </dl>
+          <button class="secondary" id="json-toggle" type="button">View signed certificate JSON</button>
+          <pre id="certificate-json" hidden></pre>
+        </div>
+      </div>
+      <div id="audit">
+        <div class="section-heading compact"><div><span>04 · AUDIT TRACE</span><h2>Every decision links backward.</h2></div></div>
+        <div class="audit-card">
+          <div class="audit-head"><span id="chain-status">Checking chain…</span><button class="secondary" id="refresh-audit" type="button">Refresh</button></div>
+          <div class="audit-list" id="audit-list"></div>
+          <p class="limitation">PoC limitation: in-memory chain; production requires a persisted trusted-head anchor.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>EchoLock AI · Local judge demo</span><span>Toy-model evidence, not flight prediction. AI proposals never control execution.</span></footer>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

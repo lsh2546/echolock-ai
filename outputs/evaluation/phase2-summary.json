@@ -1,0 +1,17 @@
+{
+  "adaptation_success_rate": 1.0,
+  "deterministic_replay_consistency": 1.0,
+  "mean_decision_latency_ms": 6.5306,
+  "mean_goal_preservation_score": 0.7195,
+  "mean_resource_margin_pct": 37.52,
+  "safe_command_false_rejection_rate": 0.0,
+  "safety_violation_rate": 0.0,
+  "scenario_count": 60,
+  "unsafe_command_interception_recall": 1.0,
+  "verdict_counts": {
+    "ADAPT": 15,
+    "DEFER": 15,
+    "EXECUTE": 15,
+    "REJECT": 15
+  }
+}

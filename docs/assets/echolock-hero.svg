@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">EchoLock compares three futures for a delayed command</title>
+  <desc id="desc">A safe command arrives after state drift. Force Original violates the battery reserve, Reject Entirely loses science, and EchoLock Verified preserves science safely and produces a verified Delta Certificate.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06100e"/><stop offset="1" stop-color="#0d2720"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6bd9ff"/><stop offset="1" stop-color="#71f6bd"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <g opacity=".25" fill="#71f6bd"><circle cx="110" cy="100" r="2"/><circle cx="430" cy="80" r="2"/><circle cx="830" cy="130" r="2"/><circle cx="1400" cy="90" r="2"/><circle cx="1760" cy="150" r="2"/></g>
+
+  <text x="110" y="104" fill="#71f6bd" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">ECHOLOCK · INTENT ESCROW FOR DEEP SPACE</text>
+  <text x="110" y="176" fill="#f2fff8" font-family="Arial, sans-serif" font-size="58" font-weight="800">Correct when sent.</text>
+  <text x="720" y="176" fill="#71f6bd" font-family="Arial, sans-serif" font-size="58" font-weight="800">Dangerous when received.</text>
+  <text x="110" y="222" fill="#9db8ad" font-family="Arial, sans-serif" font-size="25">Arrival-time revalidation preserves the mission goal without rewriting the original command.</text>
+
+  <g transform="translate(110 285)">
+    <rect width="430" height="180" rx="24" fill="#0b1916" stroke="#31564a" stroke-width="2"/>
+    <text x="28" y="42" fill="#6bd9ff" font-family="monospace" font-size="18" font-weight="700">EARTH · COMMAND SENT</text>
+    <text x="28" y="88" fill="#eef8f2" font-family="Arial, sans-serif" font-size="30" font-weight="700">Transmit 10 rock images</text>
+    <text x="28" y="126" fill="#eef8f2" font-family="Arial, sans-serif" font-size="26">4K · 100% power</text>
+    <text x="28" y="158" fill="#71f6bd" font-family="monospace" font-size="20">BATTERY 85% · SAFE</text>
+  </g>
+  <path d="M570 375 H810" stroke="url(#line)" stroke-width="5" filter="url(#glow)"/>
+  <circle cx="690" cy="375" r="10" fill="#fff" filter="url(#glow)"/>
+  <text x="622" y="346" fill="#9db8ad" font-family="monospace" font-size="18">14 MIN DELAY</text>
+  <g transform="translate(840 285)">
+    <rect width="360" height="180" rx="24" fill="#0b1916" stroke="#ffcf70" stroke-width="2"/>
+    <text x="28" y="42" fill="#ffcf70" font-family="monospace" font-size="18" font-weight="700">ARRIVAL REALITY</text>
+    <text x="28" y="90" fill="#eef8f2" font-family="Arial, sans-serif" font-size="30" font-weight="700">Battery drift</text>
+    <text x="28" y="128" fill="#ffcf70" font-family="monospace" font-size="26">85% → 28%</text>
+    <text x="28" y="158" fill="#9db8ad" font-family="Arial, sans-serif" font-size="18">Original command no longer safe</text>
+  </g>
+  <path d="M1230 375 H1450" stroke="url(#line)" stroke-width="5" filter="url(#glow)"/>
+  <g transform="translate(1480 285)">
+    <rect width="330" height="180" rx="24" fill="#123c30" stroke="#71f6bd" stroke-width="3"/>
+    <text x="28" y="42" fill="#71f6bd" font-family="monospace" font-size="18" font-weight="700">ECHOLOCK VERDICT</text>
+    <text x="28" y="105" fill="#71f6bd" font-family="Arial, sans-serif" font-size="48" font-weight="800">ADAPT</text>
+    <text x="28" y="145" fill="#eef8f2" font-family="Arial, sans-serif" font-size="22">Verified power patch: 40%</text>
+  </g>
+
+  <text x="110" y="545" fill="#eef8f2" font-family="Arial, sans-serif" font-size="34" font-weight="800">Three futures, compared before action</text>
+  <g transform="translate(110 590)">
+    <rect width="520" height="300" rx="24" fill="#211413" stroke="#ff776f" stroke-width="3"/>
+    <text x="28" y="48" fill="#ff776f" font-family="monospace" font-size="20" font-weight="700">FORCE ORIGINAL</text>
+    <text x="28" y="102" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="800">16% final battery</text>
+    <text x="28" y="145" fill="#ff776f" font-family="Arial, sans-serif" font-size="25">HI-1 reserve violated</text>
+    <text x="28" y="202" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Science value</text><text x="455" y="202" text-anchor="end" fill="#fff" font-family="monospace" font-size="24">100%</text>
+    <text x="28" y="250" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Execution eligibility</text><text x="455" y="250" text-anchor="end" fill="#ff776f" font-family="monospace" font-size="24">BLOCKED</text>
+  </g>
+  <g transform="translate(700 590)">
+    <rect width="520" height="300" rx="24" fill="#111b19" stroke="#647a72" stroke-width="2"/>
+    <text x="28" y="48" fill="#a7b8b1" font-family="monospace" font-size="20" font-weight="700">REJECT ENTIRELY</text>
+    <text x="28" y="102" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="800">28% final battery</text>
+    <text x="28" y="145" fill="#a7b8b1" font-family="Arial, sans-serif" font-size="25">Safe—but all science lost</text>
+    <text x="28" y="202" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Science value</text><text x="455" y="202" text-anchor="end" fill="#fff" font-family="monospace" font-size="24">0%</text>
+    <text x="28" y="250" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Safety violations</text><text x="455" y="250" text-anchor="end" fill="#71f6bd" font-family="monospace" font-size="24">NONE</text>
+  </g>
+  <g transform="translate(1290 590)">
+    <rect width="520" height="300" rx="24" fill="#103026" stroke="#71f6bd" stroke-width="4" filter="url(#glow)"/>
+    <text x="28" y="48" fill="#71f6bd" font-family="monospace" font-size="20" font-weight="700">ECHOLOCK VERIFIED</text>
+    <text x="28" y="102" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="800">23.2% final battery</text>
+    <text x="28" y="145" fill="#71f6bd" font-family="Arial, sans-serif" font-size="25">Science preserved · safe</text>
+    <text x="28" y="202" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Goal preservation</text><text x="455" y="202" text-anchor="end" fill="#fff" font-family="monospace" font-size="24">0.97</text>
+    <text x="28" y="250" fill="#9db8ad" font-family="Arial, sans-serif" font-size="22">Safety violations</text><text x="455" y="250" text-anchor="end" fill="#71f6bd" font-family="monospace" font-size="24">NONE</text>
+  </g>
+
+  <rect x="110" y="930" width="1700" height="82" rx="18" fill="#0b1916" stroke="#31564a"/>
+  <circle cx="155" cy="971" r="22" fill="#14392d" stroke="#71f6bd"/><text x="155" y="980" text-anchor="middle" fill="#71f6bd" font-family="Arial" font-size="24" font-weight="800">✓</text>
+  <text x="195" y="963" fill="#eef8f2" font-family="Arial, sans-serif" font-size="25" font-weight="700">DELTA CERTIFICATE · SHA-256 VERIFIED</text>
+  <text x="195" y="992" fill="#9db8ad" font-family="Arial, sans-serif" font-size="18">Original command + intent + arrival state + patch + verdict + counterfactual evidence</text>
+  <text x="1770" y="963" text-anchor="end" fill="#71f6bd" font-family="monospace" font-size="18">60 DETERMINISTIC SYNTHETIC SCENARIOS</text>
+  <text x="1770" y="992" text-anchor="end" fill="#9db8ad" font-family="Arial, sans-serif" font-size="16">PoC toy model · not flight performance</text>
+</svg>
