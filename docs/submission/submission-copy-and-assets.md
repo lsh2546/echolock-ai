@@ -39,6 +39,25 @@ assets. EchoLock supplies a testable contract between operator intent and onboar
 autonomy: adapt only within explicit authority, preserve useful mission value
 when safe, and return evidence that operators can verify.
 
+**Prior-art positioning**
+NASA's
+[Ground Data Systems and Mission Operations](https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/)
+guidance recommends controls including execution delays, pre-execution
+re-validation, validation gates, and comprehensive logging for critical command
+paths. EchoLock treats that need as the starting point for a delayed-command PoC;
+it is an independent student project and is not implemented, endorsed, certified,
+or flight-qualified by NASA.
+
+The 2026 paper
+[Intent-aligned Autonomous Spacecraft Guidance via Reasoning Models](https://arxiv.org/abs/2604.17176)
+studies high-level intent translated into behavior and safe trajectory constraints.
+EchoLock instead centers on five distinct mechanisms at a command-execution trust
+boundary: arrival-time stale-command revalidation, immutable original-command
+escrow, an intent-preserving patch, a three-way counterfactual comparison, and a
+cryptographically verifiable Delta Certificate. This comparison makes no priority
+claim over the broader fields of onboard validation, runtime assurance, or
+intent-aware autonomy.
+
 **Evaluation disclaimer**  
 The reported 100% interception, 0% safety violations, and 100% replay consistency
 are results from 60 fixed, balanced, deterministic synthetic PoC scenarios. They

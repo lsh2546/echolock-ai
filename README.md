@@ -49,6 +49,27 @@ outcomes side by side: force the original, reject everything, or apply the verif
 EchoLock action. The predictor explains the decision; it cannot override the
 deterministic Safety Gate.
 
+## Prior-art positioning
+
+NASA's current [Ground Data Systems and Mission Operations](https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/)
+guidance identifies the end-to-end command path as a critical surface and lists
+execution delays, pre-execution re-validation, validation gates, and comprehensive
+logging among recommended controls for critical commanding. EchoLock uses that
+operational need as motivation for the stale-command problem: a legitimately sent
+command can reach execution after its assumptions have drifted. **EchoLock is an
+independent student PoC; it is not a NASA implementation, endorsement,
+certification, or flight-qualified system.**
+
+The 2026 paper
+[Intent-aligned Autonomous Spacecraft Guidance via Reasoning Models](https://arxiv.org/abs/2604.17176)
+is adjacent work on translating high-level mission intent into behavior and safe
+trajectory constraints. EchoLock addresses a different system boundary. Its focus
+is arrival-time stale-command revalidation, an immutable original-command escrow,
+an intent-preserving patch that stays within pre-authorised limits, a three-way
+counterfactual comparison, and a cryptographically verifiable Delta Certificate.
+These are scoped positioning differences; EchoLock makes no priority claim over
+the broader fields of onboard validation, runtime assurance, or intent-aware autonomy.
+
 ## Run the local judge demo
 
 Python 3.11 or later is required.
